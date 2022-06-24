@@ -1,0 +1,70 @@
+body {
+  font-family: "Raleway", "sans-serif";
+}
+
+.bg_color_one, .bg_color_two {
+  background-color: #eae2d1;
+  padding: 60px 0;
+}
+
+.bg_color_two {
+  background-color: #2d3a40;
+}
+
+.theme_find_us_one {
+  font-family: "Raleway", "sans-serif";
+  font-size: 20px;
+  line-height: 2em;
+  text-transform: lowercase;
+}
+
+#header {
+  background-color: transparent;
+  padding: 10px;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.navbar .nav-item {
+  margin: 0 15px;
+}
+.navbar .nav-item .nav-link {
+  font-family: "Raleway", "sans-serif";
+  color: #333;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+.navbar .nav-item .nav-link:after {
+  content: "";
+  display: block;
+  height: 1.2px;
+  background: #333;
+  margin: 5px 0 0 0;
+  position: relative;
+}
+
+/**first section**/
+.hero-heading {
+  font-size: 140px;
+  font-family: "Italiana", "sans-serif";
+  line-height: 1em;
+  color: #2d3a40;
+  margin: 0 0 20px 0;
+  display: block;
+  position: relative;
+}
+.hero-heading span {
+  font-family: "Raleway", "sans-serif";
+}
+.hero-content_paragraph {
+  display: inline-block;
+  width: 50%;
+}
+.hero-content_paragraph > .para {
+  font-family: "Raleway", "sans-serif";
+  line-height: 1.8em;
+  font-size: 18px;
+}/*# sourceMappingURL=main.css.map */

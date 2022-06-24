@@ -1,0 +1,97 @@
+// @import "reset";
+@import "colors";
+@import "variables";
+@import "mixins";
+*,html{
+
+}
+body{
+    font-family: $font_raleway;
+}
+.bg_color_one,.bg_color_two{
+    background-color: $bg_color_one;
+    padding: $padd_60;
+}
+.bg_color_two{
+    background-color: $bg_color_two;
+}
+.theme_find_us_one{
+    @include find_us;
+}
+
+#header{
+    background-color: transparent;
+    padding: 10px;
+}
+
+.navbar{
+    &-collapse{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    &-nav{
+        // background-color: red;
+       
+    }
+    .nav-item{
+        // background-color: aliceblue;
+        margin: 0 15px;
+        .nav-link{
+            font-family: 'Raleway','sans-serif';
+            color: #333;
+            transition: all .3s ease;
+            font-weight: 400;
+            &:hover{
+                
+            }
+            &:after{
+                content: "";
+                display: block;
+                height: 1.2px;
+                background: #333;
+                margin: 5px 0 0 0;
+                position: relative;
+            }
+            
+        }
+        
+        
+    }
+
+}
+/**first section**/
+#hero-section{
+
+}
+.hero{
+    &-container{
+
+    }
+    &-content_wrap{
+        
+    }
+    &-heading{
+        font-size: 140px;
+        font-family: $font_italiana;
+        line-height: 1em;
+        color: $fg_color_one;
+        margin: 0 0 20px 0;
+        display: block;
+        position: relative;
+        span{
+            font-family: $font_raleway;
+        }
+    }
+    &-content_paragraph{
+        display: inline-block;
+        width: 50%;
+
+     >.para{
+            font-family: $font_raleway;
+            line-height: 1.8em;
+            font-size: 18px;
+    }
+    }
+
+}
