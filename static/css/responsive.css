@@ -1,0 +1,26 @@
+@media only screen and (max-width: 992px) {
+  .navbar-collapse {
+    display: block;
+  }
+  .navbar .nav-item {
+    margin: 0;
+  }
+  .navbar .nav-item:not(:last-child) {
+    border-bottom: 1px solid #333;
+  }
+  .navbar .nav-item .nav-link::after {
+    display: none;
+  }
+
+  .hero-heading {
+    font-size: 110px;
+  }
+  .hero-content_paragraph {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-heading {
+    background: rebeccapurple;
+  }
+}/*# sourceMappingURL=responsive.css.map */

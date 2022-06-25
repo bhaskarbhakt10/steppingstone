@@ -1,0 +1,25 @@
+@import "variables";
+@import "colors";
+
+@mixin heading {
+    font-family: $font_italiana;
+    font-size: 110;
+    line-height: 1.2em;
+}
+
+@mixin theme_btn {
+    font-family: $font_raleway;
+    font-size: 23px;
+    line-height: 2em;    
+}
+
+@mixin footer_direction_btn {
+    font-family: $font_italiana;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 1px solid #CAC6B4;
+    padding: 15px 40px;
+    border-radius: 0;
+    color: #CAC6B4;
+}

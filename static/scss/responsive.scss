@@ -1,0 +1,44 @@
+@import "colors";
+@import "mixins";
+@import "variables";
+@media only screen and (max-width:992px){
+    .navbar{
+        &-collapse{
+            // justify-content: flex-start;
+            display: block;
+        }
+        &-nav{
+
+        }
+        .nav-item{
+            margin: 0;
+            &:not(:last-child){
+                border-bottom: 1px solid #333;
+            }
+            .nav-link{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+    .hero{
+        &-heading{
+            font-size: $hero_font_991;
+        }
+        &-content_paragraph{
+            padding: 0 10px;
+        }
+    }
+
+
+}
+
+
+@media only screen and (max-width:767px){
+    .hero{
+        &-heading{
+            background: rebeccapurple;
+        }
+    }
+}

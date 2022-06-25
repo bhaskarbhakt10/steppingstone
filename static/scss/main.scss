@@ -1,0 +1,292 @@
+// @import "reset";
+@import "colors";
+@import "variables";
+@import "mixins";
+*,html{
+
+}
+body{
+    font-family: $font_raleway;
+}
+.bg_color_one,.bg_color_two,.bg_color_three{
+    background-color: $bg_color_one;
+    padding: $padd_60;
+}
+.bg_color_two{
+    background-color: $bg_color_two;
+}
+.bg_color_three{
+    background-color: $bg_color_aqua;
+    padding: 0;
+}
+.para{
+    font-size: $para_font_size;
+    font-family: $font_raleway;
+    line-height: 1.8em;
+    margin:10px;
+}
+.theme_find_us{
+    @include theme_btn;
+    color: #505455;
+    text-transform:lowercase;
+}
+.theme_explore{
+    @include theme_btn;
+    color: #D3AB70;
+    text-transform: capitalize;
+}
+.footer_direction_btn{
+    @include footer_direction_btn;
+}
+#header{
+    background-color: transparent;
+    padding: 10px;
+}
+
+.navbar{
+    &-collapse{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    &-nav{
+        // background-color: red;
+       
+    }
+    .nav-item{
+        // background-color: aliceblue;
+        margin: 0 15px;
+        .nav-link{
+            font-family: 'Raleway','sans-serif';
+            color: #333;
+            transition: all .3s ease;
+            font-weight: 400;
+            &:hover{
+                
+            }
+            &:after{
+                content: "";
+                display: block;
+                height: 1.2px;
+                background: #333;
+                margin: 5px 0 0 0;
+                position: relative;
+            }
+            
+        }
+        
+        
+    }
+
+}
+/**first section**/
+#hero-section{
+
+}
+.hero{
+    &-container{
+
+    }
+    &-content_wrap{
+        
+    }
+    &-heading{
+        font-size: 140px;
+        font-family: $font_italiana;
+        line-height: 1em;
+        color: $fg_color_one;
+        margin: 0 0 20px 0;
+        display: block;
+        position: relative;
+        span{
+            font-family: $font_raleway;
+        }
+    }
+    &-content_paragraph{
+        display: inline-block;
+        width: 50%;
+
+     >.para{
+            color: #2D3A40;
+    }
+    }
+
+}
+/*second section*/
+#ellementary{
+    overflow-x: hidden;
+    >.container-fluid{
+        margin: 0 0 0 110px;
+    
+    }
+    .para{
+        color: #fff;
+    }
+}
+#box1{
+    background: #B47E7F;
+}
+#box2{
+    background: #82A187;
+}
+#box3{
+    background: #DC756A;
+}
+#box4{
+    background: #7D88B0;
+}
+.box-wrap{
+    padding: 20px;
+    &_heading{
+        margin: 0 0 50px 0;
+    &_inner{
+        font-family: $font_raleway;
+        font-size: 40px;
+        font-weight: 100;
+        line-height: 1.8em;
+    }
+    }
+    &_from{
+        &::before{
+            content: '';
+            display: block;
+            height: 1px;
+            background: #505050;
+            position: relative;
+            margin: 0 0 10px 0;
+        }
+        &_inner{
+            font-family: $font_lato;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1em;
+        }
+    }
+    &_product{
+        figure{
+            margin: 0;
+            >img{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+.heading{
+    &_sub{
+        font-family: $font_raleway;
+        color: #D3AB70;
+        font-size: 50px;
+        line-height: 1em;
+    }
+    &_title{
+        font-family: $font_italiana;
+        color: #fff;
+        font-size: $hero_font_991;
+    }
+}
+/*section three*/
+#colors{
+    .heading{
+        height: 85vh;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.color_blocks{
+    .col-4{
+        padding: 0;
+    }
+    .color_block{
+        height: 224.5px;
+        width: 100%;
+        // background-color: red;
+    }
+}
+.text-color-dark{
+    color: $text_color_dark;
+}
+/*footer*/
+#footer{
+    .find_the_city{
+        .theme_form_select{
+            background-color: transparent;
+            color: #fff;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23A88964' class='bi bi-caret-down-fill' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E%0A");
+            background-position: 95% center;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-family: $font_raleway;
+            font-size: 17px;
+            font-weight: 100;
+            border-color: #707070;
+            outline: 0;
+            box-shadow: unset;
+        }
+    }
+    .address-block_wrap{
+        margin: 0 0 15px 0;
+        .address_heading{
+            color: #CAC6B4;
+            font-size: 30;
+            font-family: $font_raleway;
+            font-weight: 100;
+            margin: 0;
+        }
+        .address_line{
+            color: #CAC6B4;
+            font-family: $font_raleway;
+            font-size: 17px;
+            font-weight: 100;
+        }
+    
+    }
+    .social-block{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-end;
+        height: 85%;
+        &_heading{
+            color: #fff;
+            font-family: $font_raleway;
+            font-size: 30px;
+            font-weight: 100;
+            display: block;
+            position: relative;
+            margin: 0 0 30px 0;
+            text-transform: capitalize;
+        }
+        .social-list{
+            list-style-type: none;
+            padding: 0;
+            >li{
+                margin: 10px 0;
+                .social-item-heading{
+                    color: #A88964;
+                    font-size: 24px;
+                    font-family: $font_raleway;
+                    font-weight: 300;
+                    display: block;
+                    position: relative;
+                    margin: 0 0 5px 0;
+                    text-transform: capitalize;
+                }
+                >a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 22px;
+                    font-weight: 100;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+        
+    
