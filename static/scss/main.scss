@@ -98,13 +98,15 @@ body{
         margin: 0 0 20px 0;
         display: block;
         position: relative;
+        z-index: 999;
         span{
             font-family: $font_raleway;
+            // font-weight: 800;
         }
     }
     &-content_paragraph{
         display: inline-block;
-        width: 50%;
+        // width: 50%;
 
      >.para{
             color: #2D3A40;
@@ -188,7 +190,7 @@ body{
 /*section three*/
 #colors{
     .heading{
-        height: 85vh;
+        height: 100%;
         display: flex;
         justify-items: center;
         align-items: center;
@@ -289,4 +291,15 @@ body{
 }
 
         
-    
+#img1,#img3,#img4{
+    position: relative;
+    width: 100%;
+}
+#img3{
+    // position: relative;
+    top: -170px;
+}
+#img4{
+    // position: relative;
+   
+}
